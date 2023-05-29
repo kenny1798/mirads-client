@@ -87,7 +87,7 @@ function Mgenform({setNavbar, props}) {
     <label className='mt-3'>WhatsApp Number</label>
     <input type="text" className='form-control shadow-none' name='phonenumber' onChange={(event) => {setPhoneNumber(event.target.value)}} required maxLength="254" />
     <div className="d-grid gap-2 mt-4 mx-auto">
-      <button className='btn btn-success' onClick={formSubmit}>Submit Details</button>
+      <button className='btn btn-success' type='button' onClick={formSubmit}>Submit Details</button>
     </div>
     </form>
   </div>) : (

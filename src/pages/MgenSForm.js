@@ -215,8 +215,8 @@ function MgenSForm() {
           <label className='mt'><strong>WhatsApp Text</strong> - Your auto WhatsApp text</label>
           <textarea type="textarea" className='form-control shadow-none' defaultValue={wsText} onChange={(event) => {setWsText(event.target.value)}} required maxLength="254" />
           <div className="d-grid my-3 gap-2">
-          <button className='btn btn-primary mt-2' onClick={submitUpdate}>Submit Form</button>
-          <button className='btn btn-outline-secondary mt-2'onClick={editBack}>Back</button>
+          <button className='btn btn-primary mt-2' type='button' onClick={submitUpdate}>Submit Form</button>
+          <button className='btn btn-outline-secondary mt-2' type='button' onClick={editBack}>Back</button>
           </div>
           
           
@@ -236,7 +236,7 @@ function MgenSForm() {
       <div className="card text-center my-3">
         <div className="card-header">
           <p className="card-text">Message: {logMsg}</p>
-            {!buttonHide ? (<button onClick={generateQR}> Generate QR </button>) : (<></>)}
+            {!buttonHide ? (<button type='button' onClick={generateQR}> Generate QR </button>) : (<></>)}
         </div>
         <div className="card-body">
           {loading && (<img src={LoadingImg} alt='Loading' width='50' />)}
@@ -256,14 +256,14 @@ function MgenSForm() {
         <p className="card-text">✅Your link is ready: <a href={mgenLink}>{mgenLink}</a></p>
         </div>
         {showAlert && (<div class="alert alert-warning" role="alert">
-        Are you sure you want to delete current form? <button className='btn btn-sm btn-danger' onClick={deleteForm}>DELETE</button> <button className='btn btn-sm btn-secondary' onClick={cancelDelete}>Cancel</button>
+        Are you sure you want to delete current form? <button className='btn btn-sm btn-danger' type='button' onClick={deleteForm}>DELETE</button> <button className='btn btn-sm btn-secondary' type='button' onClick={cancelDelete}>Cancel</button>
 </div>)}
         
         <div className="card-body">
           <div className='row justify-content-center'>
-          <div className='col-md-3 my-2'><button className='btn btn-success' onClick={updateForm}>Update Form</button></div>
-          <div className='col-md-3 my-2'><button className='btn btn-primary mx-4' onClick={rescanQr}>Rescan QR</button></div>
-          <div className='col-md-3 my-2'><button className='btn btn-danger mx-2' onClick={handleAlert} >Delete Form</button></div>
+          <div className='col-md-3 my-2'><button className='btn btn-success' type='button' onClick={updateForm}>Update Form</button></div>
+          <div className='col-md-3 my-2'><button className='btn btn-primary mx-4' type='button' onClick={rescanQr}>Rescan QR</button></div>
+          <div className='col-md-3 my-2'><button className='btn btn-danger mx-2' type='button' onClick={handleAlert} >Delete Form</button></div>
           </div>
         </div>
       </div>

@@ -52,7 +52,7 @@ function AdminWsAuth({setNavbar, props}) {
       <div className="card text-center my-5">
         <div className="card-header">
           <p className="card-text">Message: {logMsg}</p>
-            {!buttonHide ? (<button onClick={generateQR}> Generate QR </button>) : (<></>)}
+            {!buttonHide ? (<button type='button' onClick={generateQR}> Generate QR </button>) : (<></>)}
         </div>
         <div className="card-body">
           {loading && (<img src={LoadingImg} alt='Loading' width='50' />)}

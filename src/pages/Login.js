@@ -61,7 +61,7 @@ function Login() {
           <label className='mt-3'>Password</label>
           <input type="password" className='form-control shadow-none' onChange={(event) => {setPassword(event.target.value)}}  />
           <div className="d-grid gap-2 my-4">
-            <button className="btn btn-primary mt-3" onClick={login}>Sign In</button>
+            <button className="btn btn-primary mt-3" type='button' onClick={login}>Sign In</button>
           </div>
           {!errMsg ?(<></>):(
                     <>

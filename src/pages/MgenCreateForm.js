@@ -70,7 +70,7 @@ const noSpace = (e) => {
           <label className='mt-5'><strong>WhatsApp Text</strong> - Your auto WhatsApp text</label>
           <textarea type="textarea" className='form-control shadow-none' onChange={(event) => {setWsText(event.target.value)}} required maxLength="254" />
           <div className="d-grid my-3 gap-2">
-          <button className='btn btn-primary mt' onClick={createForm}>Submit Form</button>
+          <button className='btn btn-primary mt' type='button' onClick={createForm}>Submit Form</button>
           </div>
           
           
